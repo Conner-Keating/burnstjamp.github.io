@@ -1,73 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
 <html>
+
  <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>News - Burnst Jamp's Weezer Collection Spreadsheet</title>
-  <style>
-   body {
-    background-color: #FFFAFA;
-    background-image: linear-gradient(#F8F8FF, #FFFAFA);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-   }
-   .center {
-     text-align: center;
-   }
-   .title {
-    color: #191970;
-   }
-   .content {
-     font-size: 1.17em;
-   }
-   .animatedTitle::before {
+ <style>
+ 
+  body {
+   background-color: #FFFAFA;
+   background-image: linear-gradient(#F8F8FF, #FFFAFA);
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+  }
+ 
+  .center {
+   text-align: center;
+  }
+ 
+  .title {
+   color: #191970;
+  }
+
+  .content {
+  font-size: 1.17em;
+  }
+
+  .animatedTitle::before {
+   content: "WEEZER RELEASES";
+   animation: animateTitle infinite 5s;
+  }
+ 
+  @keyframes animateTitle {
+   
+   0% {
     content: "NEWS";
-     animation: animateTitle infinite 5s;
    }
-   @keyframes animateTitle {
-    0% {
-     content: "NEWS";
-    }
-    33% {
-     content: "> NEWS <"
-    }
-    66% {
-     content: "> > NEWS < <";
-    }
+  
+   33% {
+    content: "> NEWS <";
+   }
+  
+   66% {
+    content: "> > NEWS < <";
+   }
+  
    100% {
     content: "> > > NEWS < < <";
-    }
    }
-  </style>
+  }
+  
+ </style>
  </head>
+
  <body>
-  <h1 class="center">
-   Burnst Jamp's Weezer collection spreadsheet
+
+  <h1 class="center title">
+   <u>Burnst Jamp's Weezer collection spreadsheet</u>
   </h1>
 
   <h3 class="center">
-   | | <a href=home>HOME</a> / <a href=news>NEWS</a> | | <a href=weezer-releases>Weezer releases</a> / <a href=associated-releases>Associated band releases</a> / <a href=compilations>Compilations</a> / <a href=tribute-cover-releases>Tribute/cover releases</a> / <a href=bootlegs>Bootlegs</a> / <a href=non-music>Non-music</a> | | <a href=signature-gallery>Signature gallery</a> / <a href=favorites>Favorite items</a> / <a href=wanted>Wanted items</a> | |
+  | | <a href=home.html>HOME</a> / <a href=news.html>NEWS</a> | | <a href=weezer-releases.html>Weezer releases</a> / <a href=associated-releases.html>Associated band releases</a> / <a href=compilations.html>Compilations</a> / <a href=tribute-cover-releases.html>Tribute/cover releases</a> / <a href=bootlegs.html>Bootlegs</a> / <a href=non-music.html>Non-music</a> | | <a href=signature-gallery.html>Signature gallery</a> / <a href=favorites.html>Favorite items</a> / <a href=wanted.html>Wanted items</a> | |
   </h3>
 
   <hr>
 
   <h2 class="center">
-   <span class="animatedTitle" />
+  <span class="animatedTitle" />
   </h2>
 
   <p class="content">
-   <b>July 17, 2025:</b> Online! Yet, construction continues...
-   <br><br>
-   <b>July 15, 2025:</b> Under construction...
+
+  <b>August 1, 2025:</b> I have finally finished the 'CDs' section of the <a href=weezer-releases>weezer releases</a> page! That will probably be the longest and most detailed individual table on the website, so it's an accomplishment to have it completed. In addition, I've slightly redone the appearance of the table to use a flag icon (instead of an abbreviation) and to include a small thumbnail image of each release! The images will be chosen based on what I think will best represent each individual release, i.e., the back insert artwork for a promo with no front insert, or the CD artwork for albums with multiple very similar variants with no visual differences on the cover.
+  <br><br>
+  I have also updated the <a href=home>home</a> page to look and read a little nicer, as well as to update the 'stats' section. Behind the scenes, I learned how to use # "anchors" and am now able to link to <a href=weezer-releases#Vinyl>specific</a> <a href=weezer-releases#5-Album-Collection>parts</a> of pages. I've also tried to begin creating graphics for the site, including a logo and a possible header format to replace the current simple text version.
+  <br><br>
+  Construction continues. I hope to have a decent proportion of the website done before I leave for college in two weeks. We shall see...
+
+  <br><br>
+
+  <b>July 17, 2025:</b> Online! Yet, construction continues...
+
+  <br><br>
+
+  <b>July 15, 2025:</b> Under construction...
+
   </p>
-  
-   <br>
-   <hr>
+
+  <br>
+  <hr>
 
   <p class="center">
-   Last updated: July 17, 2025 • Burnst Jamp (keatingconner@gmail.com)
+  Last updated: August 1, 2025 • Burnst Jamp (keatingconner@gmail.com)
   </p>
 
  </body>
+
 </html>
