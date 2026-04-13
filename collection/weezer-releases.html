@@ -62,9 +62,24 @@
      background-color: transparent
     }
    }
+   #top-jump {
+    opacity: 0; 
+    pointer-events: none;
+    transition: all 0.08s ease-in;
+  } 
+  #top-jump.is-visible {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
   </style>
  </head>
  <body>
+  <div id="top-jump" style="position: fixed; z-index: 2; display: flex; justify-content: center; align-items: center; bottom: 40px; left: 50%">
+    <div style="position: fixed; display: flex; justify-content: center; align-items: center; background: white; opacity: 1; width: 375px; height: 30px; text-align: center; box-shadow: 1px 1px 2px black"><p>Jump to: <a href=>Top</a> • <a href=#CDs>CDs</a> • <a href=#Vinyl>Vinyl</a> • <a href=#Cassettes>Cassettes</a> • <a href=#Video>Video</a> • <a href=#Misc>Misc</a></p></div>
+  </div>
+
+
   <h1 class="center title">
    <u>Burnst Jamp's Weezer collection spreadsheet</u>
   </h1>
@@ -157,7 +172,7 @@
    First pressing by DADC with no SID codes. Red "PROMOTIONAL" stamp on disc. My copy has a black "My Name Is Jonas" hype sticker on the front with '-DJ' appended to the catalog number.
   </td>
   <td>
-   <img src="https://i.discogs.com/9encobhJrMkA1DnSBLVz_CeM4M_g2o6FUq3FwG0XUZk/rs:fit/g:sm/q:90/h:600/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1OTIz/OTY0LTE2MDAyODA3/MzctNDU0NS5qcGVn.jpeg" style="width: 100%; display: block;">
+   <img src="../img/thumbs/weezer060cs.webp" style="width: 100%; display: block;">
   </td>
   <td>
    <a href=https://www.discogs.com/release/15923964-Weezer-Weezer>Discogs</a> <br>
@@ -417,6 +432,7 @@
    Re-issue sold by Circuit City; part of a series of 12 releases that contained a free iron-on patch. Patch has the <i>Blue Album</i> cover artwork. My copy has a hype sticker on the front shrinkwrap.
   </td>
   <td>
+   <img src="../img/thumbs/weezer061cs.webp" style="width: 100%; display: block;">
   </td>
   <td>
    <s>Discogs</s>
@@ -434,7 +450,7 @@
   <td style="background-color: #F8F8FF">
    <i>Weezer (The Blue Album)</i>
   </td>
-  <td style="text-align:center;">
+  <td style="text-align:center; background-color: #F8F8FF">
    <img src="../img/flags/FLAG_US.webp" title="United States" style="width: 30px; border: 1px solid;">
   </td>
   <td style="background-color: #F8F8FF">
@@ -447,7 +463,7 @@
    Repress by Sony DADC, Terre Haute. Release date unclear, but sequential matrix code suggests this is a 2008 pressing.  
   </td>
   <td style="background-color: #F8F8FF">
-   <img src="https://i.discogs.com/bP8u68DBr_lzavI-ZJ5rZaQSWj6RzyrCRUT9qksOhIw/rs:fit/g:sm/q:90/h:578/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYxNTI4/MjQtMTU0OTgxNzMy/OS01NTYwLmpwZWc.jpeg" style="width: 100%; display: block;">
+   <img src="../img/thumbs/weezer062cs.webp" style="width: 100%; display: block;">
   </td>
   <td style="background-color: #F8F8FF">
    <a href=https://www.discogs.com/release/6152824-Weezer-Weezer>Discogs</a> <br>
@@ -561,7 +577,7 @@
    • JEWEL CASE RE-ISSUE
   </td>
   <td>
-   European re-issue of the 2xCD deluxe edition, packaged in a jewel case rather than a digipak. Has a hyper sticker and a transparent "Deluxe Edition" sticker on the front.
+   European re-issue of the 2xCD deluxe edition, packaged in a jewel case rather than a digipak. Has a hype sticker and a transparent "Deluxe Edition" sticker on the front.
   </td>
   <td>
    <img src="https://i.discogs.com/39_lZHyXqmElrNn1RKwWbHEYb_jmC5WR_t5WnGGQeCU/rs:fit/g:sm/q:90/h:522/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE3NTU3/MDA5LTE2MjIxMjAx/MjktOTI5OC5wbmc.jpeg" style="width: 100%; display: block;">
@@ -587,11 +603,12 @@
   </td>
   <td>
    • SACD <br>
-   • MFSL PRESS <br>
+   • DADC PRESS <br>
+   • MFSL MASTER <br>
    • NUMBERED
   </td>
   <td>
-   SACD remaster issued by MFSL in a gatefold CD sleeve. Numbered edition [#01115]. 
+   SACD remaster pressed by Sony DADC issued by MFSL in a gatefold CD sleeve. Numbered edition [#01115]. 
   </td>
   <td>
    <img src="https://i.discogs.com/HlMGngIj7VCWdAuRFp4in-rllKKD9UpbEVs6_EcpoEQ/rs:fit/g:sm/q:90/h:600/w:586/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY2Mjgz/NDItMTY1Mjk5ODQz/NC0xOTg2LmpwZWc.jpeg" style="width: 100%; display: block;">
@@ -709,7 +726,7 @@
    Japanese SHM-CD release of the 30th anniversary deluxe edition, issued in lieu of the box set in the region. 3xCD set in a digipak; includes <i>Weezine</i> issue #18. Includes an obi strip. My copy has a hype sticker on the front shrinkwrap and includes an amazon.co.jp-exclusive 24 cm "Mega Jacket" print of the album artwork.
   </td>
   <td>
-   <img src="https://i.discogs.com/N7n9f7zIKsiBJUkb7i9Vh4ILK_Ka1HHJCjwZ99jElDQ/rs:fit/g:sm/q:90/h:529/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMyNzkz/NDk1LTE3MzkxNTk5/NDYtNTg3MS5qcGVn.jpeg" style="width: 100%; display: block;">
+   <img src="../img/thumbs/weezer063cs.webp" style="width: 100%; display: block;">
   </td>
   <td>
    <a href=https://www.discogs.com/release/32793495-Weezer-Weezer-30>Discogs</a> <br>
@@ -1046,7 +1063,7 @@
    Brazillian pressing by Sonopress Brasil. On my copy, the inside of the back insert has a faded blue stamp which appears to read "EL PROMOÇÃO".
   </td>
   <td>
-   <img src="https://i.discogs.com/-GFnbeBJABdf3dwNVM_8ZfiisEQxKhwsEhqpI5emvto/rs:fit/g:sm/q:90/h:508/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE4ODI1/MzE2LTE2MjE2Mjc3/OTAtODIyOS5qcGVn.jpeg" style="width: 100%; display: block;">
+   <img src="../img/thumbs/weezer064cs.webp" style="width: 100%; display: block;">
   </td>
   <td>
    <a href=https://www.discogs.com/release/18825316-Weezer-Pinkerton>Discogs</a> <br>
@@ -1434,6 +1451,92 @@
 
   <td style="background-color: #FFDAB9" />
   <td>
+   1996
+  </td>
+  <td>
+   "El Scorcho"
+  </td>
+  <td style="text-align:center;">
+   <img src="../img/flags/FLAG_US.webp" title="United States" style="width: 30px; border: 1px solid;">
+  </td>
+  <td>
+   • CD-R<br>
+   • 2-TRACK PROMO SINGLE<br>
+   • CLEAN EDIT
+  </td>
+  <td>
+   CD-R 2-track promotional single issued by Quadim in a jewel case. Includes two clean versions of the song ("Bleep Damn" and "Dog Damn" edits). Includes a front and back insert with generic artwork, but my copy is missing both. 
+  </td>
+  <td>
+   <img src="https://web.archive.org/web/20260413144502/https://www.weezerpedia.com/w/images/9/97/Elscorchocleandisc.jpg?20230916213856" style="width: 100%; display: block;">
+  </td>
+  <td>
+   <a href=https://www.discogs.com/release/8939361-Weezer-El-Scorcho>Discogs</a> <br>
+   <a href=https://www.weezerpedia.com/w/index.php?title=Catalog:El_Scorcho#United_States,_1996,_CD-R,_Promo_(%22Clean_Versions%22)>Catalog</a>
+  </td>
+
+ </tr>
+
+ <tr>
+
+  <td style="background-color: #FFDAB9" />
+  <td>
+   1996
+  </td>
+  <td>
+   "The Good Life"
+  </td>
+  <td style="text-align:center;">
+   <img src="../img/flags/FLAG_US.webp" title="United States" style="width: 30px; border: 1px solid;">
+  </td>
+  <td>
+   • 2-TRACK PROMO SINGLE
+  </td>
+  <td>
+   2-track promotional single issued in a windowed paper sleeve. Includes the "Remix" and "LP" versions of the song, mixed by Rob Jacobs and Jack Joseph Puig, respectively.
+  </td>
+  <td>
+   <img src="https://web.archive.org/web/20260413141150/https://www.weezerpedia.com/w/images/6/66/GoodlifeUSdisc.jpg?20230916212823" style="width: 100%; display: block;">
+  </td>
+  <td>
+   <a href=https://www.discogs.com/release/4525737-Weezer-The-Good-Life>Discogs</a> <br>
+   <a href=https://www.weezerpedia.com/w/index.php?title=Catalog:The_Good_Life#United_States,_PRO-CD-1075,_1996,_CD,_Promo>Catalog</a>
+  </td>
+
+ </tr>
+
+ <tr>
+
+  <td style="background-color: #FFDAB9" />
+  <td>
+   1996
+  </td>
+  <td>
+   "The Good Life"
+  </td>
+  <td style="text-align:center;">
+   <img src="../img/flags/FLAG_SE.webp" title="Sweden" style="width: 30px; border: 1px solid;">
+  </td>
+  <td>
+   • PROMO SINGLE
+  </td>
+  <td>
+   Swedish promotional single issued in a windowed paper sleeve. Some copies include a transparent sticker and lyric sheet, but my copy is missing them.
+  </td>
+  <td>
+   <img src="https://web.archive.org/web/20260413141154/https://www.weezerpedia.com/w/images/b/b3/Goodlifeswedendisc.jpg?20230512185942" style="width: 100%; display: block;">
+  </td>
+  <td>
+   <a href=https://www.discogs.com/release/6537725-Weezer-The-Good-Life>Discogs</a> <br>
+   <a href=https://www.weezerpedia.com/w/index.php?title=Catalog:The_Good_Life#Sweden,_WEEZERPROMO_96,_1996,_CD,_Promo>Catalog</a>
+  </td>
+
+ </tr>
+
+ <tr>
+
+  <td style="background-color: #FFDAB9" />
+  <td>
    1997
   </td>
   <td>
@@ -1471,8 +1574,8 @@
    <img src="../img/flags/FLAG_AUS.webp" title="Australia" style="width: 30px; border: 1px solid;">
   </td>
   <td>
-   • EP <br>
-   • 5-TRACK SINGLE
+   • 5-TRACK SINGLE <br>
+   • EP 
   </td>
   <td>
    Australian 5-track "OZ EP" single issued in a slimline jewel case. Includes "Waiting On You", "I Just Threw Out the Love of My Dreams", "The Good Life" (live acoustic), and "Pink Triangle" (live acoustic) as B-sides.
@@ -1528,8 +1631,8 @@
    <img src="../img/flags/FLAG_US.webp" title="United States" style="width: 30px; border: 1px solid;">
   </td>
   <td>
-   • EP <br>
    • 2-TRACK PROMO SINGLE
+   • EP <br>
   </td>
   <td>
    2-track promotional CD issued in a cardstock sleeve. Includes "The Christmas Song" and "Christmas Celebration".
@@ -1734,6 +1837,7 @@
    French re-issue, issued shrinkwrapped together with additional promotional <i>3 Titres Inédits</i> CD stored in a cardstock sleeve. Bonus CD includes "Crab" (live), "Don't Let Go" (live), "Always" (Jack Joseph Puig remix). My copy is still in shrink and includes three hype stickers (two for the album itself, one advertising the bonus CD promotion).
   </td>
   <td>
+   <img src="../img/thumbs/weezer065cs.webp" style="width: 100%; display: block;">
   </td>
   <td>
    <a href=https://www.discogs.com/release/5082151-Weezer-Weezer>Discogs</a> <br>
@@ -1820,6 +1924,7 @@
    Japanese re-issue; part of the "Super Nice Price 1470" [¥1,470] series. Includes bonus tracks "The Christmas Song" and "I Do". Includes an obi strip and a Japanese lyrics booklet. This is the version of this re-issue with a purple obi strip; Universal International is credited on the obi for production.
   </td>
   <td>
+   <img src="../img/thumbs/weezer066cs.webp" style="width: 100%; display: block;">
   </td>
   <td>
    <s>Discogs</s> <br>
@@ -1994,6 +2099,7 @@
    Front insert only; unclear which exact release it originated from. <u>Signed</u> by Rivers, Pat, Brian, and Mikey.
   </td>
   <td>
+   <img src="../img/thumbs/weezer067cs.webp" style="width: 100%; display: block;">
   </td>
   <td>
    N/A
@@ -2424,7 +2530,7 @@
    Promotional single issued in a jewel case. No front insert.
   </td>
   <td>
-   <img src="https://i.discogs.com/7txS6WKjL2Ab-UuzYmpK11EtqJlaj0cMhY2YGMpyB0Q/rs:fit/g:sm/q:90/h:508/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY1Mzgw/NzMtMTUzNjg2MzM0/OC03ODM5LmpwZWc.jpeg" style="width: 100%; display: block;">
+   <img src="../img/thumbs/weezer076cs.webp" style="width: 100%; display: block;">
   </td>
   <td>
    <a href=https://www.discogs.com/release/6538073-Weezer-Photograph>Discogs</a> <br>
@@ -2598,6 +2704,7 @@
    Japanese re-issue; part of the "Ultra Price" [¥1,260] series. Includes bonus tracks "Island in the Sun" and "Living Without You". CD is enhanced and includes seven videos. Includes an obi strip and a Japanese lyrics booklet.
   </td>
   <td>
+   <img src="../img/thumbs/weezer068cs.webp" style="width: 100%; display: block;">
   </td>
   <td>
    <s>Discogs</s> <br>
@@ -2915,10 +3022,11 @@
    First pressing of the digipak variant of this album by UML. CD is enhanced and includes a "Making of <i>Make Believe</i>" video.
   </td>
   <td>
-   <img src="https://i.discogs.com/9UL5jDmEQ-54O9PSQa23zY1UmKWHbOt-kvw-w3QxXe8/rs:fit/g:sm/q:90/h:534/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ1NjA4/NS0xMzA0MzA2ODk2/LmpwZWc.jpeg" style="width: 100%; display: block;">
+   <img src="https://i.discogs.com/JtwaXv7FCE0YBJTCTxhuVEpBI5N-UwXqjRstsvLO_TQ/rs:fit/g:sm/q:90/h:596/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ1NjA4/NS0xMzg0OTc5MDk0/LTI1MDIuanBlZw.jpeg" style="width: 100%; display: block;">
   </td>
   <td>
    <a href=https://www.discogs.com/release/456085-Weezer-Make-Believe>Discogs</a>
+   <a href=https://www.weezerpedia.com/w/index.php?title=Catalog:Make_Believe#United_States,_B0004617-12,_2005,_CD,_Enhanced>Catalog</a>
   </td>
 
  </tr>
@@ -2948,6 +3056,7 @@
   </td>
   <td>
    <a href=https://www.discogs.com/release/5303694-Weezer-Make-Believe>Discogs</a>
+   <s>Catalog</s>
   </td>
 
  </tr>
@@ -2977,6 +3086,7 @@
   </td>
   <td>
    <a href=https://www.discogs.com/release/3515509-Weezer-Make-Believe>Discogs</a>
+   <a href=https://www.weezerpedia.com/w/index.php?title=Catalog:Make_Believe#Japan,_UICF-1040,_2005,_CD,_Enhanced_(Digipak_case)>Catalog</a>
   </td>
 
  </tr>
@@ -3005,6 +3115,7 @@
   </td>
   <td>
    <a href=https://www.discogs.com/release/8710719-Weezer-Make-Believe>Discogs</a>
+   <a href=https://www.weezerpedia.com/w/index.php?title=Catalog:Make_Believe#Japan,_UICO-9605,_2005,_CD,_Enhanced,_Reissue>Catalog</a>
   </td>
 
  </tr>
@@ -3030,9 +3141,11 @@
    Repress by Technicolor Universal Media Services manufactured sometime in 2005 (per the date code on its matrix). Possibly repressed as a result of the May 2005 closure of UML. CD is enhanced and includes a "Making of <i>Make Believe</i>" video.
   </td>
   <td>
+   <img src="../img/thumbs/weezer069cs.webp" style="width: 100%; display: block;">
   </td>
   <td>
    <s>Discogs</s>
+   <s>Catalog</s>
   </td>
 
  </tr>
@@ -3061,6 +3174,7 @@
   </td>
   <td>
    <a href=https://www.discogs.com/release/30056476-Weezer-Make-Believe>Discogs</a>
+   <s>Catalog</s>
   </td>
 
  </tr>
@@ -3090,6 +3204,7 @@
   </td>
   <td>
    <a href=https://www.discogs.com/release/25091296-Weezer-Make-Believe>Discogs</href>
+   <a href=https://www.weezerpedia.com/w/index.php?title=Catalog:Make_Believe#United_States,_B0011575-02,_2008,_CD,_Enhanced,_Reissue,_Retailer_Exclusive>Catalog</a>
   </td>
 
  </tr>
@@ -3116,10 +3231,12 @@
    <hr>
    Repress by Sony DADC, Terre Haute. Release date unclear, but sequential matrix code suggests this is a 2008 pressing. CD is enhanced and includes a "Making of <i>Make Believe</i>" video.
   </td>
-  <td>
+  <td style="background-color: #F8F8FF">
+   <img src="../img/thumbs/weezer071cs.webp" style="width: 100%; display: block;">
   </td>
   <td style="background-color: #F8F8FF">
    <s>Discogs</s>
+   <a href=https://www.weezerpedia.com/w/index.php?title=Catalog:Make_Believe#United_States,_B0004520-12,_2005,_CD,_Enhanced,_Reissue_(Sony_DADC)>Catalog</a>
   </td>
 
  </tr>
@@ -3149,6 +3266,7 @@
   </td>
   <td>
    <a href=https://www.discogs.com/release/11268077-Weezer-Make-Believe>Discogs</a>
+   <a href=https://www.weezerpedia.com/w/index.php?title=Catalog:Make_Believe#Japan,_UICY-25184,_2012,_SHM-CD,_Enhanced,_Reissue>Catalog</a>
   </td>
 
  </tr>
@@ -3176,6 +3294,7 @@
   </td>
   <td>
    <a href=https://www.discogs.com/release/9573083-Weezer-Beverly-Hills>Discogs</a>
+   <a href=https://www.weezerpedia.com/w/index.php?title=Catalog:Beverly_Hills#United_States,_GEFR-11382-2,_2005,_CD,_Promo>Catalog</a>
   </td>
 
  </tr>
@@ -3190,19 +3309,20 @@
    "Beverly Hills"
   </td>
   <td style="text-align:center;">
-   <img src="../img/flags/FLAG_SE.webp" title="Sweden" style="width: 30px; border: 1px solid;">
+   <img src="../img/flags/FLAG_EU.webp" title="Europe" style="width: 30px; border: 1px solid;">
   </td>
   <td>
    • PROMO SINGLE
   </td>
   <td>
-   Swedish promotional single issued in a slimline jewel case.
+   European promotional single issued in a slimline jewel case.
   </td>
   <td>
    <img src="https://i.discogs.com/HAMNRsgI6-xzUrlMfd_v6HR3TIDWaxeGAL6Gk4byerU/rs:fit/g:sm/q:90/h:524/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0OTQx/NDAwLTE1ODQ0NjE4/NDYtNjcxNS5qcGVn.jpeg" style="width: 100%; display: block;">
   </td>
   <td>
    <a href=https://www.discogs.com/release/14941400-Weezer-Beverly-Hills>Discogs</a>
+   <a href=https://www.weezerpedia.com/w/index.php?title=Catalog:Beverly_Hills#Europe,_HILLS_1,_2005,_CD,_Promo>Catalog</a>
   </td>
 
  </tr>
@@ -3230,34 +3350,7 @@
   </td>
   <td>
    <a href=https://www.discogs.com/release/5572447-Weezer-Beverly-Hills>Discogs</a>
-  </td>
-
- </tr>
-
- <tr>
-
-  <td style="background-color: #DCDCDC" />
-  <td>
-   2005
-  </td>
-  <td>
-   <i>Prime Cuts</i>
-  </td>
-  <td style="text-align:center;">
-   <img src="../img/flags/FLAG_EU.webp" title="Europe" style="width: 30px; border: 1px solid;">
-  </td>
-  <td>
-   • PROMO SAMPLER <br>
-   • SLIMLINE
-  </td>
-  <td>
-   European 7-track promotional sampler issued in a slimline jewel case. 
-  </td>
-  <td>
-   <img src="https://i.discogs.com/k-vovH2NtRJb52ZR7_KouuWiZO1nUdTYwZ27-iAI3vY/rs:fit/g:sm/q:90/h:519/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE3NzQ4/OTI4LTE2Mjc2MzAy/NjEtODgyNC5qcGVn.jpeg" style="width: 100%; display: block;">
-  </td>
-  <td>
-   <a href=https://www.discogs.com/release/17748928-Weezer-Prime-Cuts>Discogs</a>
+   <s>Catalog</s>
   </td>
 
  </tr>
@@ -3285,6 +3378,7 @@
   </td>
   <td>
    <a href=https://www.discogs.com/release/3624393-Weezer-We-Are-All-On-Drugs>Discogs</a>
+   <a href=https://www.weezerpedia.com/w/index.php?title=Catalog:We_Are_All_on_Drugs#United_States,_GEFR-11493-2,_2005,_CD,_Promo>Catalog</a>
   </td>
 
  </tr>
@@ -3312,6 +3406,7 @@
   </td>
   <td>
    <a href=https://www.discogs.com/release/4089449-Weezer-We-Are-All-On-Drugs>Discogs</a>
+   <a href=https://www.weezerpedia.com/w/index.php?title=Catalog:We_Are_All_on_Drugs#Europe,_WEEZERCDP1,_2005,_CD,_Promo>Catalog</a>
   </td>
 
  </tr>
@@ -3340,6 +3435,7 @@
   </td>
   <td>
    <a href=https://www.discogs.com/release/8454984-Weezer-Perfect-Situation>Discogs</a>
+   <s>Catalog</s>
   </td>
 
  </tr>
@@ -3368,6 +3464,36 @@
   </td>
   <td>
    <a href=https://www.discogs.com/release/8454984-Weezer-Perfect-Situation>Discogs</a>
+   <s>Catalog</s>
+  </td>
+
+ </tr>
+
+ <tr>
+
+  <td style="background-color: #DCDCDC" />
+  <td>
+   2005
+  </td>
+  <td>
+   <i>Prime Cuts</i>
+  </td>
+  <td style="text-align:center;">
+   <img src="../img/flags/FLAG_EU.webp" title="Europe" style="width: 30px; border: 1px solid;">
+  </td>
+  <td>
+   • PROMO SAMPLER <br>
+   • SLIMLINE
+  </td>
+  <td>
+   European 7-track promotional sampler issued in a slimline jewel case. 
+  </td>
+  <td>
+   <img src="https://i.discogs.com/k-vovH2NtRJb52ZR7_KouuWiZO1nUdTYwZ27-iAI3vY/rs:fit/g:sm/q:90/h:519/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE3NzQ4/OTI4LTE2Mjc2MzAy/NjEtODgyNC5qcGVn.jpeg" style="width: 100%; display: block;">
+  </td>
+  <td>
+   <a href=https://www.discogs.com/release/17748928-Weezer-Prime-Cuts>Discogs</a>
+   <s>Catalog</s>
   </td>
 
  </tr>
@@ -3396,6 +3522,7 @@
   </td>
   <td>
    <a href=https://www.discogs.com/release/7862693-Weezer-New-Found-Glory-Christmas-Song-Christmas-Celebration-The-Christmas-Song>Discogs</a>
+   <s>Catalog</s>
   </td>
 
  </tr>
@@ -3423,6 +3550,7 @@
   </td>
   <td>
    <a href=https://www.discogs.com/release/28558702-Weezer-Weezer>Discogs</a>
+   <s>Catalog</s>
   </td>
 
  </tr>
@@ -3452,6 +3580,7 @@
   </td>
   <td style="background-color: #F8F8FF">
    <a href="https://www.discogs.com/release/22043083-Weezer-Weezer">Discogs</a>
+   <a href=https://www.weezerpedia.com/w/index.php?title=Catalog:Weezer_(The_Red_Album)#United_States,_B0011135-02_IN02,_2008,_CD>Catalog</a>
   </td>
 
  </tr>
@@ -3479,6 +3608,7 @@
   </td>
   <td>
    <a href=https://www.discogs.com/release/1406473-Weezer-Weezer>Discogs</a>
+   <a href=https://www.weezerpedia.com/w/index.php?title=Catalog:Weezer_(The_Red_Album)#United_States,_B0011336-02,_2008,_CD,_Deluxe_Edition>Catalog</a>
   </td>
 
  </tr>
@@ -3506,6 +3636,7 @@
   </td>
   <td>
    <a href=https://www.discogs.com/release/3581498-Weezer-Weezer>Discogs</a>
+   <a href=https://www.weezerpedia.com/w/index.php?title=Catalog:Weezer_(The_Red_Album)#United_Kingdom,_1774493,_2008,_CD_(Super_Jewel_Box)>Catalog</a>
   </td>
 
  </tr>
@@ -3534,6 +3665,7 @@
   </td>
   <td>
    <a href=https://www.discogs.com/release/2148524-Weezer-Weezer>Discogs</a>
+   <s>Catalog</s>
   </td>
 
  </tr>
@@ -3562,6 +3694,7 @@
   </td>
   <td>
    <a href=https://www.discogs.com/release/3925757-Weezer-Weezer>Discogs</a>
+   <s>Catalog</s>
   </td>
 
  </tr>
@@ -3589,6 +3722,7 @@
   </td>
   <td>
    <a href=https://www.discogs.com/release/4730820-Weezer-Weezer>Discogs</a>
+   <a href=https://www.weezerpedia.com/w/index.php?title=Catalog:Weezer_(The_Red_Album)#Japan,_UICF-1102,_2008,_CD>Catalog</a>
   </td>
 
  </tr>
@@ -3614,10 +3748,11 @@
    Japanese deluxe edition issued in a digipak. Includes a DVD with eleven videos. Includes deluxe tracks "Miss Sweeney", "Pig", "The Spider", "King", "The Weight", "Life Is What You Make It", and "メリクリ" ("Meri Kuri"). Includes an obi and a Japanese lyrics booklet.
   </td>
   <td>
-   <img src="https://i.discogs.com/0KVlF8wnUhcqDAGGdrRBT0Qtpnug9tu_0xzoWLc8vhs/rs:fit/g:sm/q:90/h:544/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIxNDAy/ODMtMTI2NjE4MTQ1/Ni5qcGVn.jpeg" style="width: 100%; display: block;">
+   <img src="../img/thumbs/weezer070cs.webp" style="width: 100%; display: block;">
   </td>
   <td>
    <a href=https://www.discogs.com/release/2140283-Weezer-Weezer>Discogs</a>
+   <a href=https://www.weezerpedia.com/w/index.php?title=Catalog:Weezer_(The_Red_Album)#Japan,_UICF-9057,_2008,_CD,_DVD,_Deluxe_Edition>Catalog</a>
   </td>
 
  </tr>
@@ -3646,6 +3781,7 @@
   </td>
   <td>
    <a href=https://www.discogs.com/release/21269557-Weezer-Weezer>Discogs</a>
+   <a href=https://www.weezerpedia.com/w/index.php?title=Catalog:Weezer_(The_Red_Album)#Japan,_UICF-9059,_2008,_CD,_Limited_Edition_(Porter_Christmas_edition)>Catalog</a>
   </td>
 
  </tr>
@@ -3673,6 +3809,7 @@
   </td>
   <td>
    <a href=https://www.discogs.com/release/29390014-Weezer-Weezer>Discogs</a>
+   <s>Catalog</s>
   </td>
 
  </tr>
@@ -3697,10 +3834,11 @@
    Japanese SHM-CD re-issue; part of the "My Generation, My Music - Back to the Rock Years 1993-1997" series. Includes bonus tracks "The Weight", "Life Is What You Make It", and "メリクリ" ("Meri Kuri"). Includes an obi strip and a Japanese lyrics booklet.
   </td>
   <td>
-   <img src="https://i.discogs.com/kwV7H-iVzI8IWptb1E34fOr3HVUxva9tEIlZy-UfWOM/rs:fit/g:sm/q:90/h:524/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExMjY4/MTAzLTE2NDgzMTQ1/OTItNDkwOC5qcGVn.jpeg" style="width: 100%; display: block;">
+   <img src="../img/thumbs/weezer072cs.webp" style="width: 100%; display: block;">
   </td>
   <td>
    <a href=https://www.discogs.com/release/11268103-Weezer-Weezer>Discogs</a>
+   <a href=https://www.weezerpedia.com/w/index.php?title=Catalog:Weezer_(The_Red_Album)#Japan,_UICY-25185,_2012,_SHM-CD,_Reissue>Catalog</a>
   </td>
 
  </tr>
@@ -3729,6 +3867,7 @@
   </td>
   <td>
    <a href=https://www.discogs.com/release/19090963-Weezer-Weezer>Discogs</a>
+   <s>Catalog</s>
   </td>
 
  </tr>
@@ -3752,17 +3891,18 @@
    Promotional single issued in a slimline jewel case. No artwork.
   </td>
   <td>
-   <img src="https://i.discogs.com/Lr2XnKCu5Nz08Oy7EZWCCVrJjxBICJRENA428pZESFA/rs:fit/g:sm/q:90/h:555/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTk4Mzcx/MzktMTQ4NzExMDg2/Mi03Nzk4LmpwZWc.jpeg" style="width: 100%; display: block;">
+   <img src="../img/thumbs/weezer074cs.webp" style="width: 100%; display: block;">
   </td>
   <td>
    <a href=https://www.discogs.com/release/9837139-Weezer-Pork-and-Beans>Discogs</a>
+   <s>Catalog</s>
   </td>
 
  </tr>
 
  <tr>
 
-  <td style="background-color: #FFDAB9" />
+  <td style="background-color: #F4BF92" />
   <td>
    2008
   </td>
@@ -3773,16 +3913,18 @@
    <img src="../img/flags/FLAG_US.webp" title="United States" style="width: 30px; border: 1px solid;">
   </td>
   <td>
-   • 7-TRACK "REMIXES" SINGLE
+   • 7-TRACK SINGLE <br>
+   • REMIXES EP 
   </td>
   <td>
-   7-track single issued in a jewel case. Also known as <i>Troublemaker Remixes</i>; may be classified as a maxi-single or EP. All seven tracks are remixes of the song by various artists.
+   7-track single issued in a jewel case. Also titled <i>Troublemaker Remixes</i>. All seven tracks are remixes of the song by various artists.
   </td>
   <td>
    <img src="https://i.discogs.com/yAdVz0OL5d4BDe2dmbDa4uaZAucFGgWvHjTvTcurOio/rs:fit/g:sm/q:90/h:596/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1MDgw/NjUtMTYxODEwODUx/Mi0zMzkxLmpwZWc.jpeg" style="width: 100%; display: block;">
   </td>
   <td>
    <a href=https://www.discogs.com/release/1508065-Weezer-Troublemaker-Remixes>Discogs</a>
+   <a href=https://www.weezerpedia.com/w/index.php?title=Catalog:Troublemaker_Remixes#United_States,_INTR-12514-2,_2008,_CD,_Promo>Catalog</a>
   </td>
 
  </tr>
@@ -3810,6 +3952,7 @@
   </td>
   <td>
    <a href=https://www.discogs.com/release/1970843-Weezer-Six-Hits>Discogs</a>
+   <a href=https://www.weezerpedia.com/w/index.php?title=Catalog:Six_Hits#United_States,_B0012344-02,_2008,_CD,_Retailer_Exclusive>Catalog</a>
   </td>
 
  </tr>
@@ -3837,6 +3980,7 @@
   </td>
   <td>
    <a href=https://www.discogs.com/release/13273631-Weezer-Six-Hits>Discogs</a>
+   <a href=https://www.weezerpedia.com/w/index.php?title=Catalog:Six_Hits#Mexico,_1793791,_2008,_CD>Catalog</a>
   </td>
 
  </tr>
@@ -3861,10 +4005,11 @@
    CD-R containing audio from Weezer's 08/27/2009 concert in Camden, NJ. Issued in a cardboard digisleeve. This is the version with a black disc. From their series of "official bootleg" CD-Rs sold on weezer.com.
   </td>
   <td>
-   <img src="https://i.discogs.com/t3NhFumHMMVAilPP0iwrKJbjKu4Efu31Uju_L6YEJqg/rs:fit/g:sm/q:90/h:479/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTgxNTk5/NDUtMTQ1NjI1MzI0/NC03NTQ3LmpwZWc.jpeg" style="width: 100%; display: block;">
+   <img src="../img/thumbs/weezer073cs.webp" style="width: 100%; display: block;">
   </td>
   <td>
    <a href=https://www.discogs.com/release/8159945-Weezer-Live-In-Camden-New-Jersey>Discogs</a>
+   <s>Catalog</s>
   </td>
 
  </tr>
@@ -3892,6 +4037,7 @@
   </td>
   <td>
    <a href=https://www.discogs.com/release/2763970-Weezer-Raditude>Discogs</a>
+   <a href=https://www.weezerpedia.com/w/index.php?title=Catalog:Raditude#United_States,_B0013510-02,_2009,_CD>Catalog</a>
   </td>
 
  </tr>
@@ -3917,9 +4063,11 @@
    Canadian pressing by Cinram. This copy was imported to Japan and offered as a rental item; an "import" obi strip is included and the front insert and disc have "for rental only" stamps. [*This release is not eligible for a unique submission on Discogs; the page for the unaltered Canadian Cinram press is linked.]
   </td>
   <td>
+   <img src="../img/thumbs/weezer075cs.webp" style="width: 100%; display: block;">
   </td>
   <td>
    <a href=https://www.discogs.com/release/3615325-Weezer-Raditude>Discogs</a>
+   <s>Catalog</s>
   </td>
 
  </tr>
@@ -3948,6 +4096,7 @@
   </td>
   <td>
    <a href=https://www.discogs.com/release/1994547-Weezer-Raditude>Discogs</a>
+   <a href=https://www.weezerpedia.com/w/index.php?title=Catalog:Raditude#United_States,_B0013511-72,_2009,_2xCD,_Deluxe_Edition>Catalog</a>
   </td>
 
  </tr>
@@ -3976,6 +4125,7 @@
   </td>
   <td>
    <a href=https://www.discogs.com/release/8355735-Weezer-Raditude>Discogs</a>
+   <a href=https://www.weezerpedia.com/w/index.php?title=Catalog:Raditude#Japan,_UICF-1119/20,_2009,_2xCD,_Deluxe_Edition>Catalog</a>
   </td>
 
  </tr>
@@ -4004,6 +4154,7 @@
   </td>
   <td>
    <a href=https://www.discogs.com/release/2437350-Weezer-Raditude-Happy-Record-Store-Day>Discogs</a>
+   <a href=https://www.weezerpedia.com/w/index.php?title=Catalog:Raditude_...Happy_Record_Store_Day!#United_States,_B0014167-02,_2010,_CD>Catalog</a>
   </td>
 
  </tr>
@@ -4033,6 +4184,7 @@
   </td>
   <td>
    <a href=https://www.discogs.com/release/28558597-Weezer-Hurley>Discogs</a>
+   <s>Catalog</s>
   </td>
 
  </tr>
@@ -4060,6 +4212,7 @@
   </td>
   <td>
    <a href=https://www.discogs.com/release/2764042-Weezer-Hurley>Discogs</a>
+   <a href=https://www.weezerpedia.com/w/index.php?title=Catalog:Hurley#United_States,_87126-2,_2010,_CD>Catalog</a>
   </td>
 
  </tr>
@@ -4085,9 +4238,11 @@
    First pressing by Disque Americ. This copy was imported to Japan and offered as a rental item; an "import" obi strip is included and the release is covered with RIAJ rental stickers/stamps. [*This release is not eligible for a unique submission on Discogs; the page for the unaltered US DADR press is linked.]
   </td>
   <td>
+   <img src="../img/thumbs/weezer077cs.webp" style="width: 100%; display: block;">
   </td>
   <td>
    <a href=https://www.discogs.com/release/2764042-Weezer-Hurley>Discogs</a>
+   <s>Catalog</s>
   </td>
 
  </tr>
@@ -4108,13 +4263,14 @@
    • DELUXE EDITION
   </td>
   <td>
-   Deluxe edition. Includes deluxe tracks "All My Friends are Insects", "Viva La Vida", "I Want to Be Something", "Represent" (Rocked Out mix).
+   Deluxe edition. Includes deluxe tracks "All My Friends are Insects", "Viva La Vida", "I Want to Be Something", and "Represent" (Rocked Out mix).
   </td>
   <td>
    <img src="https://i.discogs.com/fsJb894FbNkt7nYirtqXP6rosSYRQVvS5ChOPvuqe-M/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0NDgz/NTItMTUzNDI3OTEy/MS0xMTc5LmpwZWc.jpeg" style="width: 100%; display: block;">
   </td>
   <td>
    <a href=https://www.discogs.com/release/2448352-Weezer-Hurley>Discogs</a>
+   <a href=https://www.weezerpedia.com/w/index.php?title=Catalog:Hurley#United_States,_87131-2,_2010,_CD,_Deluxe_Edition>Catalog</a>
   </td>
 
  </tr>
@@ -4142,6 +4298,7 @@
   </td>
   <td>
    <a href=https://www.discogs.com/release/7862658-Weezer-Hurley>Discogs</a>
+   <a href=https://www.weezerpedia.com/w/index.php?title=Catalog:Hurley#Japan,_EICP_1430,_2010,_CD,_Deluxe_Edition>Catalog</a>
   </td>
 
  </tr>
@@ -4169,6 +4326,7 @@
   </td>
   <td>
    <a href=https://www.discogs.com/release/3467584-Weezer-Memories>Discogs</a>
+   <s>Catalog</s>
   </td>
 
  </tr>
@@ -4196,6 +4354,7 @@
   </td>
   <td>
    <a href=https://www.discogs.com/release/6009264-Weezer-Hang-On>Discogs</a>
+   <a href=https://www.weezerpedia.com/w/index.php?title=Catalog:Hang_On#United_Stated,_87126-2S2,_2010,_CD,_Promo>Catalog</a>
   </td>
 
  </tr>
@@ -4224,6 +4383,7 @@
   </td>
   <td>
    <a href=https://www.discogs.com/release/7862643-Weezer-The-Death-To-False-Metal-Pinkerton-Deluxe-Sampler>Discogs</a>
+   <a href=https://www.weezerpedia.com/w/index.php?title=Catalog:The_Death_to_False_Metal_%26_Pinkerton_Deluxe_Sampler#United_States,_2010,_CD-R,_Promo>Catalog</a>
   </td>
 
  </tr>
@@ -4249,9 +4409,11 @@
    Canadian pressing by Disque Americ. This copy was imported to Japan and offered as a rental item; an "import" obi strip is included and the release is covered with RIAJ rental stickers/stamps. [*This release is not eligible for a unique submission on Discogs; the page for the unaltered CA press is linked.]
   </td>
   <td>
+   <img src="../img/thumbs/weezer078cs.webp" style="width: 100%; display: block;">
   </td>
   <td>
    <a href=https://www.discogs.com/release/2867009-Weezer-Death-To-False-Metal>Discogs</a>
+   <s>Catalog</s>
   </td>
 
  </tr>
@@ -4277,6 +4439,7 @@
    European pressing by EDC, Germany. Includes bonus track "Outta Here". This copy was imported to Taiwan and sold under the "搖滾火種系列" ("Rock Spark") series. Includes an obi strip and Chinese lyrics booklet (my copy is missing the booklet). My copy has a hype sticker on the front.
   </td>
   <td>
+   <img src="../img/thumbs/weezer079cs.webp" style="width: 100%; display: block;">
   </td>
   <td>
    <s>Discogs</s> <br>
@@ -4308,6 +4471,7 @@
   </td>
   <td>
    <a href=https://www.discogs.com/release/4890804-Weezer-Death-To-False-Metal>Discogs</a>
+   <s>Catalog</s>
   </td>
 
  </tr>
@@ -4334,6 +4498,36 @@
   </td>
   <td>
    <a href=https://www.discogs.com/release/16121930-Weezer-Death-To-False-Metal>Discogs</a>
+   <s>Catalog</s>
+  </td>
+
+ </tr>
+
+ <tr>
+
+   <td style="background-color: #B0C4DE" />
+  <td>
+   est. 2012
+  </td>
+  <td>
+   <i>Live in Baltimore, Maryland</i>
+  </td>
+  <td style="text-align:center;">
+   <img src="../img/flags/FLAG_US.webp" title="United States" style="width: 30px; border: 1px solid;">
+  </td>
+  <td>
+   • CD-R <br>
+   • OFFICIAL BOOTLEG
+  </td>
+  <td>
+   CD-R containing audio from Weezer's 09/15/2012 concert in Baltimore, Maryland. Issued in a cardboard digisleeve. This is the version with a white disc. From their series of "official bootleg" CD-Rs sold on weezer.com. This was first made available for sale sometime between October 2012 and January 2013.
+  </td>
+  <td>
+   <img src="https://i.discogs.com/sOVgEvvaWCAdbla9ihIfhBFQ-NRmFwi119hcwSq6lc8/rs:fit/g:sm/q:90/h:536/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0Mzg3/Mjg1LTE1NzM0OTQ3/MTUtNzMzOS5qcGVn.jpeg" style="width: 100%; display: block;">
+  </td>
+  <td>
+   <a href=https://www.discogs.com/release/14387285-Weezer-Live-In-Baltimore-Maryland>Discogs</a>
+   <s>Catalog</s>
   </td>
 
  </tr>
@@ -4361,6 +4555,7 @@
   </td>
   <td>
    <a href=https://www.discogs.com/release/6561460-Weezer-5-Album-Set>Discogs</a>
+   <a href=https://www.weezerpedia.com/w/index.php?title=Catalog:5_Album_Set#Australia,_3780422,_2014,_5xCD,_Reissue,_Box_Set>Catalog</a>
   </td>
 
  </tr>
@@ -4388,6 +4583,7 @@
   </td>
   <td>
    <a href=https://www.discogs.com/release/12098426-Weezer-5-Album-Collection-Only-Best-Buy->Discogs</a>
+   <a href=https://www.weezerpedia.com/w/index.php?title=Catalog:5_Album_Collection#United_States,_4400306719,_2014,_5xCD,_Reissue,_Retailer_Exclusive,_Box_Set>Catalog</a>
   </td>
 
  </tr>
@@ -4417,6 +4613,7 @@
   </td>
   <td>
    <a href=https://www.discogs.com/release/28835527-Weezer-Everything-Will-Be-Alright-In-The-End>Discogs</a>
+   <s>Catalog</s>
   </td>
 
  </tr>
@@ -4444,6 +4641,7 @@
   </td>
   <td>
    <a href=https://www.discogs.com/release/6167017-Weezer-Everything-Will-Be-Alright-In-The-End>Discogs</a>
+   <a href=https://www.weezerpedia.com/w/index.php?title=Catalog:Everything_Will_Be_Alright_in_the_End#United_States,_B0021619-02,_2014,_CD>Catalog</a>
   </td>
 
  </tr>
@@ -4471,6 +4669,7 @@
   </td>
   <td>
    <a href=https://www.discogs.com/release/10492538-Weezer-Everything-Will-Be-Alright-In-The-End>Discogs</a>
+   <s>Catalog</s>
   </td>
 
  </tr>
@@ -4494,9 +4693,11 @@
    Japanese re-issue; part of the "Pops Best 1000" series. Includes an obi strip and a Japanese lyrics booklet.
   </td>
   <td>
+   <img src="../img/thumbs/weezer080cs.webp" style="width: 100%; display: block;">
   </td>
   <td>
    <s>Discogs</s>
+   <s>Catalog</s>
   </td>
 
  </tr>
@@ -4525,6 +4726,7 @@
   </td>
   <td>
    <a href="https://www.discogs.com/release/28558675-Weezer-Back-To-The-Shack">Discogs</a>
+   <s>Catalog</s>
   </td>
 
  </tr>
@@ -4552,6 +4754,7 @@
   </td>
   <td>
    <a href=https://www.discogs.com/release/8317203-Weezer-Weezer>Discogs</a>
+   <a href=https://www.weezerpedia.com/w/index.php?title=Catalog:Weezer_(The_White_Album)#United_States,_554625-2,_2016,_CD>Catalog</a>
   </td>
 
  </tr>
@@ -4579,6 +4782,7 @@
   </td>
   <td>
    <a href=https://www.discogs.com/release/8325317-Weezer-Weezer>Discogs</a>
+   <a href=https://www.weezerpedia.com/w/index.php?title=Catalog:Weezer_(The_White_Album)#Japan,_WPCR-17221,_2016,_CD>Catalog</a>
   </td>
 
  </tr>
@@ -4607,6 +4811,7 @@
   </td>
   <td>
    <a href=https://www.discogs.com/release/9506713-Weezer-%E3%82%A6%E3%82%A3%E3%83%BC%E3%82%B6%E3%83%BC-Weezer-%E3%82%A6%E3%82%A3%E3%83%BC%E3%82%B6%E3%83%BC%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%E3%82%A2%E3%83%AB%E3%83%90%E3%83%A0%E3%83%87%E3%83%A9%E3%83%83%E3%82%AF%E3%82%B9%E3%82%A8%E3%83%87%E3%82%A3%E3%82%B7%E3%83%A7>Discogs</a>
+   <a href=https://www.weezerpedia.com/w/index.php?title=Catalog:Weezer_(The_White_Album)#Japan,_WPCR-17591,_2016,_CD,_Deluxe_Edition>Catalog</a>
   </td>
 
  </tr>
@@ -4634,6 +4839,7 @@
   </td>
   <td>
    <a href=https://www.discogs.com/release/13593773-Weezer-Pacific-Daydream>Discogs</a>
+   <s>Catalog</s>
   </td>
 
  </tr>
@@ -4661,6 +4867,7 @@
   </td>
   <td>
    <a href=https://www.discogs.com/release/18085432-Weezer-Pacific-Daydream>Discogs</a>
+   <a href=https://www.weezerpedia.com/w/index.php?title=Catalog:Pacific_Daydream#United_States,_563788-2,_2017,_CD>Catalog</a>
   </td>
 
  </tr>
@@ -4686,9 +4893,11 @@
    Pressing by Technicolor, Guadalajara, Mexico. This copy was imported to Japan and offered as a rental item; an "import" obi strip is included and the release is covered with RIAJ rental stickers/stamps. [*This release is not eligible for a unique submission on Discogs; the page for the unaltered US Technicolor press is linked.]
   </td>
   <td>
+   <img src="../img/thumbs/weezer081cs.webp" style="width: 100%; display: block;">
   </td>
   <td>
    <a href=https://www.discogs.com/release/11047288-Weezer-Pacific-Daydream>Discogs</a>
+   <s>Catalog</s>
   </td>
 
  </tr>
@@ -4712,10 +4921,11 @@
    Japanese pressing by Sony DADC Japan. Includes bonus track "Feels Like Summer" (acoustic). Includes an obi and a Japanese lyrics booklet.
   </td>
   <td>
-   <img src="https://i.discogs.com/yhdaFQ5VgsVJ9WuyYmGKTwoLPSXyeZt-AWx_5XANy3w/rs:fit/g:sm/q:90/h:450/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExMDU0/MTYwLTE1MDg5OTkx/OTEtNjM0Ni5qcGVn.jpeg" style="width: 100%; display: block;">
+   <img src="../img/thumbs/weezer082cs.webp" style="width: 100%; display: block;">
   </td>
   <td>
    <a href=https://www.discogs.com/release/11054160-Weezer-Pacific-Daydream>Discogs</a>
+   <a href=https://www.weezerpedia.com/w/index.php?title=Catalog:Pacific_Daydream#Japan,_WPCR-17867,_2017,_CD>Catalog</a>
   </td>
 
  </tr>
@@ -4743,6 +4953,7 @@
   </td>
   <td>
    <a href=https://www.discogs.com/release/13277235-Weezer-Weezer>Discogs</a>
+   <a href=https://www.weezerpedia.com/w/index.php?title=Catalog:Weezer_(The_Black_Album)#United_States,_585330-2,_2019,_CD>Catalog</a>
   </td>
 
  </tr>
@@ -4770,6 +4981,7 @@
   </td>
   <td>
    <a href=https://www.discogs.com/release/13833665-Weezer-Weezer>Discogs</a>
+   <a href=https://www.weezerpedia.com/w/index.php?title=Catalog:Weezer_(The_Teal_Album)#United_States,_587378-2,_2019,_CD>Catalog</a>
   </td>
 
  </tr>
@@ -4796,7 +5008,8 @@
    <img src="https://i.discogs.com/13d1be-A1BSrzPPGthI7BKs3g8_3kJYdRi_mGcskiqs/rs:fit/g:sm/q:90/h:590/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE3MjE1/MzY2LTE2MjA3MzYx/NDAtNTQwMS5qcGVn.jpeg" style="width: 100%; display: block;">
   </td>
   <td>
-   <a href=https://www.discogs.com/release/13309242-Weezer-Weezer>Discogs</a>
+   <a href=https://www.discogs.com/release/17215366-Weezer-OK-Human>Discogs</a>
+   <a href=https://www.weezerpedia.com/w/index.php?title=Catalog:OK_Human#United_States,_075678645846,_2021,_CD>Catalog</a>
   </td>
 
  </tr>
@@ -4824,6 +5037,7 @@
   </td>
   <td>
    <a href=https://www.discogs.com/release/18603310-Weezer-Van-Weezer>Discogs</a>
+   <a href=https://www.weezerpedia.com/w/index.php?title=Catalog:Van_Weezer#United_States,_075678650918,_2021,_CD>Catalog</a>
   </td>
 
  </tr>
@@ -4841,16 +5055,17 @@
    <img src="../img/flags/FLAG_US.webp" title="United States" style="width: 30px; border: 1px solid;">
   </td>
   <td>
-   • CD-R
+   • CDV/CA PRESS
   </td>
   <td>
-   Official print-on-demand CD-R version of the album.
+   Pressing by CD Video Manufacturing.
   </td>
   <td>
    <img src="https://i.discogs.com/X9eNFqPfaSXH0abvlUxvVyt0leXO0OwW7uNjI4MU6VI/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0NTkw/NTc2LTE2NzMzMTEz/NzUtODg4Ni5qcGVn.jpeg" style="width: 100%; display: block;">
   </td>
   <td>
    <a href=https://www.discogs.com/release/24590576-Weezer-SZNZ-Spring>Discogs</a>
+   <a href=https://www.weezerpedia.com/w/index.php?title=Catalog:SZNZ:_Summer#075678634321,_2022,_CD>Catalog</a>
   </td>
 
  </tr>
@@ -4878,6 +5093,7 @@
   </td>
   <td>
    <a href=https://www.discogs.com/release/23068529-Weezer-SZNZ-Spring->Discogs</a>
+   <s>Catalog</s>
   </td>
 
  </tr>
@@ -4905,6 +5121,7 @@
   </td>
   <td>
    <a href=https://www.discogs.com/release/25720423-Weezer-SZNZ-Summer>Discogs</a>
+   <a href=https://www.weezerpedia.com/w/index.php?title=Catalog:SZNZ:_Summer#075678634321,_2022,_CD>Catalog</a>
   </td>
 
  </tr>
@@ -4932,6 +5149,7 @@
   </td>
   <td>
    <a href=https://www.discogs.com/release/25092997-Weezer-SZNZ-Autumn>Discogs</a>
+   <a href=https://www.weezerpedia.com/w/index.php?title=Catalog:SZNZ:_Autumn#075678634338,_2022,_CD>Catalog</a>
   </td>
 
  </tr>
@@ -4959,6 +5177,7 @@
   </td>
   <td>
    <a href=https://www.discogs.com/release/25543459-Weezer-SZNZ-Autumn>Discogs</a>
+   <s>Catalog</s>
   </td>
 
  </tr>
@@ -4986,6 +5205,7 @@
   </td>
   <td>
    <a href=https://www.discogs.com/release/25560610-Weezer-SZNZ-Winter>Discogs</a>
+   <s>Catalog</s>
   </td>
 
  </tr>
@@ -5019,6 +5239,552 @@
   </td>
   <td style="width: 5%; background-color: #F0FFFF">
    <b>Links</b>
+  </td>
+
+ </tr>
+ <tr>
+
+   <td style="background-color: #FFDAB9" />
+  <td>
+   1994
+  </td>
+  <td>
+   "Undone - The Sweater Song"
+  </td>
+  <td style="text-align:center;">
+   <img src="../img/flags/FLAG_US.webp" title="United States" style="width: 30px; border: 1px solid;">
+  </td>
+  <td>
+   • 7" 45 RPM SINGLE
+  </td>
+  <td>
+   7" 45 RPM jukebox single b/w "Holiday". Issued in a generic blue DGC sleeve (my copy is missing the original sleeve).
+  </td>
+  <td>
+   <center><a target="_blank" href="https://web.archive.org/web/20250730111400if_/https://i.discogs.com/8JtBmhphZ-PxtaGRWOMQN60cb6l1S0yEwclRQurfB5U/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2NTY2/NzUtMTM4NDk3MzM1/OS03MTUxLmpwZWc.jpeg"><img src="https://web.archive.org/web/20250730111400if_/https://i.discogs.com/8JtBmhphZ-PxtaGRWOMQN60cb6l1S0yEwclRQurfB5U/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2NTY2/NzUtMTM4NDk3MzM1/OS03MTUxLmpwZWc.jpeg" style="width: 90%; display: block;"></a href></center>
+  </td>
+  <td>
+   <a href=https://www.discogs.com/release/1656675-Weezer-Undone-The-Sweater-Song>Discogs</a>
+   <a href=https://www.weezerpedia.com/w/index.php?title=Catalog:Undone_-_The_Sweater_Song#United_States,_DGCS7-19378,_1994,_Vinyl_(7%22),_Promo>Catalog</a>
+  </td>
+
+ </tr>
+ <tr>
+
+   <td style="background-color: #B0C4DE" />
+  <td>
+   1995
+  </td>
+  <td>
+   <i>Weezer (The Blue Album)</i>
+  </td>
+  <td style="text-align:center;">
+   <img src="../img/flags/FLAG_UK.webp" title="United Kingdom" style="width: 30px; border: 1px solid;"> <br>
+   <img src="../img/flags/FLAG_JP.webp" title="Japan" style="width: 30px; border: 1px solid;">
+  </td>
+  <td>
+   • 12" LP <br>
+   • EMI PRESS <br>
+   • "FULL BODY" ARTWORK
+  </td>
+  <td>
+   UK 12" LP pressing by EMI Records. Sleeve was erroneously printed with the uncropped ("full body") album artwork. A significant proportion of these were imported to Japan for sale at Time Bomb Records.
+  </td>
+  <td>
+   <img src="https://i.discogs.com/Nnhig66cYvCxq-bmCjBfDRKMnz_iImgmLo2DoF89AOg/rs:fit/g:sm/q:90/h:539/w:540/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM2Mzg1/NjItMTMzODM5NTg2/Ny02MDI1LmpwZWc.jpeg" style="width: 100%; display: block;">
+  </td>
+  <td>
+   <a href=https://www.discogs.com/release/3638562-Weezer-Weezer>Discogs</a>
+   <s>Catalog</s>
+  </td>
+
+ </tr>
+ <tr>
+
+   <td style="background-color: #B0C4DE" />
+  <td>
+   2012
+  </td>
+  <td>
+   <i>Weezer (The Blue Album)</i>
+  </td>
+  <td style="text-align:center;">
+   <img src="../img/flags/FLAG_US.webp" title="United States" style="width: 30px; border: 1px solid;">
+  </td>
+  <td>
+   • 180G 12" LP <br>
+   • RTI PRESS <br>
+   • MFSL MASTER <br>
+   • NUMBERED
+  </td>
+  <td>
+   180G 12" LP remaster pressed by Record Technology Incorporated. Issued by MFSL in a gatefold record sleeve. This version has the "incorrect" Weezer font on the front artwork. Numbered [#018575].
+  </td>
+  <td>
+   <img src="https://i.discogs.com/iKrNUMWYKkOK7e6YGBDlSbJ4xp-REABixHaOOamZEl8/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM5MjM5/NDUtMTUyNDYwMTk1/My02NDkwLmpwZWc.jpeg" style="width: 100%; display: block;">
+  </td>
+  <td>
+   <a href=https://www.discogs.com/release/3923945-Weezer-Weezer>Discogs</a>
+   <s>Catalog</s>
+  </td>
+
+ </tr>
+ <tr>
+
+   <td style="background-color: #B0C4DE" />
+  <td>
+   2020
+  </td>
+  <td>
+   <i>Weezer (The Blue Album)</i>
+  </td>
+  <td style="text-align:center;">
+   <img src="../img/flags/FLAG_US.webp" title="United States" style="width: 30px; border: 1px solid;">
+  </td>
+  <td>
+   • 12" LP <br>
+   • RTI PRESS <br>
+   • TARGET EXCLUSIVE <br>
+   • "BLUE-MARBLED" COLOR
+  </td>
+  <td>
+   12" LP pressing by Record Technology Incorporated. This repress is the "blue marbled" color variant exclusively sold by Target in 2020 (catalog # B0028060-01). This version has the "incorrect" Weezer font on the front artwork.
+  </td>
+  <td>
+   <img src="https://i.discogs.com/P_o_B61FYcjk2FQFQ17quLk-KITZkOKO0A4ca_xDiPc/rs:fit/g:sm/q:90/h:600/w:592/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI5MTQ3/NjE3LTE3MDIwNjgx/MTctNDUzNC5qcGVn.jpeg" style="width: 100%; display: block;">
+  </td>
+  <td>
+   <a href=https://www.discogs.com/release/29147617-Weezer-Weezer>Discogs</a>
+   <a href=https://www.weezerpedia.com/w/index.php?title=Catalog:Weezer_(The_Blue_Album)#United_States,_B0028060-01,_2020,_Vinyl,_Reissue,_Remastered,_Colored_Vinyl_(Blue_Marbled)>Catalog</a>
+  </td>
+
+ </tr>
+ <tr>
+
+   <td style="background-color: #B0C4DE" />
+  <td>
+   2022
+  </td>
+  <td>
+   <i>Weezer (The Blue Album)</i>
+  </td>
+  <td style="text-align:center;">
+   <img src="../img/flags/FLAG_EU.webp" title="Europe" style="width: 30px; border: 1px solid;">
+  </td>
+  <td>
+   • 12" LP <br>
+   • TAKT PRESS <br>
+  </td>
+  <td>
+   EU 12" LP pressing by Takt Direct. This version has the "incorrect" Weezer font on the front artwork.
+  </td>
+  <td>
+   <img src="https://i.discogs.com/z773rJZ1zkaT-tqonAgW7KaHE6owFPJvHYbHZ0ypx80/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0NDE1/NDM2LTE2NjIzMjM3/NjAtNDc2MS5qcGVn.jpeg" style="width: 100%; display: block;">
+  </td>
+  <td>
+   <a href=https://www.discogs.com/release/24415436-Weezer-Weezer>Discogs</a>
+   <s>Catalog</s>
+  </td>
+
+ </tr>
+ <tr>
+
+   <td style="background-color: #B0C4DE" />
+  <td>
+   2024
+  </td>
+  <td>
+   <i>Weezer (The Blue Album)</i>
+  </td>
+  <td style="text-align:center;">
+   <img src="../img/flags/FLAG_US.webp" title="United States" style="width: 30px; border: 1px solid;">
+  </td>
+  <td>
+   • 12" LP <br>
+   • GZ PRESS <br>
+   • WALMART EXCLUSIVE <br> 
+   • "BLUE GALAXY" COLOR
+  </td>
+  <td>
+   12" LP remaster pressed by GZ Media. This repress is the "blue galaxy" color variant exclusively sold by Walmart as part of the 30th anniversary of <i>Weezer (The Blue Album)</i>.
+  </td>
+  <td>
+   <img src="https://i.discogs.com/L72hxganX80e95qzHQHGPD-TrwGxVT5eWowkrVAPY4Q/rs:fit/g:sm/q:90/h:600/w:594/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMyMjE3/MTAyLTE3MzA5NDE2/MjYtOTA3OC5qcGVn.jpeg" style="width: 100%; display: block;">
+  </td>
+  <td>
+   <a href=https://www.discogs.com/release/32217102-Weezer-Weezer>Discogs</a>
+   <s>Catalog</s>
+  </td>
+
+ </tr>
+ <tr>
+
+   <td style="background-color: #B0C4DE" />
+  <td>
+   2024
+  </td>
+  <td>
+   <i>Weezer (The Blue Album)</i>
+  </td>
+  <td style="text-align:center;">
+   <img src="../img/flags/FLAG_US.webp" title="United States" style="width: 30px; border: 1px solid;">
+  </td>
+  <td>
+   • 12" LP <br>
+   • GZ PRESS <br>
+   • INDIE EXCLUSIVE <br> 
+   • "GHOSTLY BLUE & CLEAR" COLOR
+  </td>
+  <td>
+   12" LP remaster pressed by GZ Media. This repress is the "ghostly blue & clear" color variant exclusively sold by independent retail record stores as part of the 30th anniversary of <i>Weezer (The Blue Album)</i>.
+  </td>
+  <td>
+   <img src="https://i.discogs.com/EyWWbO5Ou-BdHFaQVz95pz24wmBb7yoG7XgjfQAnAhM/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMyMjE2/NDcyLTE3MzEzNzE3/MTktNTg3Mi5qcGVn.jpeg" style="width: 100%; display: block;">
+  </td>
+  <td>
+   <a href=https://www.discogs.com/release/32216472-Weezer-Weezer>Discogs</a>
+   <s>Catalog</s>
+  </td>
+
+ </tr>
+ <tr>
+
+   <td style="background-color: #B0C4DE" />
+  <td>
+   2024
+  </td>
+  <td>
+   <i>Weezer (The Blue Album)</i>
+  </td>
+  <td style="text-align:center;">
+  </td>
+  <td>
+   • 180G 12" 2xLP <br>
+   • PRP PRESS <br>
+   • 45RPM HALF-SPEED MASTER <br>
+   • INTERSCOPE.COM EXCLUSIVE <br>
+   • NUMBERED
+  </td>
+  <td>
+   Worldwide 12" 2xLP pressed by Precision Record Pressing. Records are 180 grams and are half-speed masters which play at 45 RPM. Limited run of 1500 sold exclusively at Interscope.com as part of the 30th anniversary of <i>Weezer (The Blue Album)</i>. Issued in a silver foil gatefold record sleeve with "weezer 30" artwork. Includes a silver foil poster. Numbered edition [#0554].
+  </td>
+  <td>
+   <img src="https://i.discogs.com/M67ZxKCsiYO4yjGTqq4cFRBhi0EJ5mlEk-V60DjNhHQ/rs:fit/g:sm/q:90/h:600/w:590/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMyMTkz/MzEyLTE3MzA3MTc0/MTUtNTU1OC5qcGVn.jpeg" style="width: 100%; display: block;">
+  </td>
+  <td>
+   <a href=https://www.discogs.com/release/32193312-Weezer-Weezer-30>Discogs</a>
+   <s>Catalog</s>
+  </td>
+
+ </tr>
+ <tr>
+
+  <td style="background-color: #BFE0BF" />
+  <td>
+   2024
+  </td>
+  <td>
+   <i>Weezer (The Blue Album)</i>
+  </td>
+  <td>
+  </td>
+  <td>
+   • 12" 3xLP + 10" 45 RPM + 7" 33⅓ RPM <br>
+   • 30TH ANNIVERSARY DELUXE BOX SET
+  </td>
+  <td>
+   Worldwide vinyl release of the 30th anniversary deluxe box set. Set houses three 12" LPs, a 10" 45 RPM disc, and a 7" 33⅓ RPM disc in a sweater-themed box; includes <i>Weezine</i> issue #18, stickers, lithographs, a poster, a pin, and a D12 die. Includes a hype sticker on the front.
+  </td>
+  <td>
+   <img src="https://i.discogs.com/ahwByKwjiPfWQkNzcX8untDweOUUb0-TtKZWxbClzvo/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMyMjI1/OTI4LTE3MzEwMTg1/NzktNjU2NS5qcGVn.jpeg" style="width: 100%; display: block;">
+  </td>
+  <td>
+   <a href=https://www.discogs.com/release/32225928-Weezer-Weezer>Discogs</a>
+   <s>Catalog</s>
+  </td>
+
+ </tr>
+ <tr>
+
+   <td style="background-color: #B0C4DE" />
+  <td>
+   2013
+  </td>
+  <td>
+   <i>Pinkerton</i>
+  </td>
+  <td style="text-align:center;">
+   <img src="../img/flags/FLAG_US.webp" title="United States" style="width: 30px; border: 1px solid;">
+  </td>
+  <td>
+   • 180G 12" LP <br>
+   • RTI PRESS <br>
+   • MFSL MASTER <br>
+   • NUMBERED
+  </td>
+  <td>
+   180G 12" LP remaster pressed by Record Technology Incorporated. Issued by MFSL in a gatefold record sleeve. Numbered [#012576].
+  </td>
+  <td>
+   <img src="https://i.discogs.com/UsLFvOTUF8alxRolCDoxDa0GK_2mYaOKwyIciIDs5N8/rs:fit/g:sm/q:90/h:593/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ3MDIy/MDgtMTU0NDMxMjAz/MC05ODY3LmpwZWc.jpeg" style="width: 100%; display: block;">
+  </td>
+  <td>
+   <a href=https://www.discogs.com/release/4702208-Weezer-Pinkerton>Discogs</a>
+   <s>Catalogs</s>
+  </td>
+
+ </tr>
+ <tr>
+
+   <td style="background-color: #B0C4DE" />
+  <td>
+   2016
+  </td>
+  <td>
+   <i>Pinkerton</i>
+  </td>
+  <td style="text-align:center;">
+   <img src="../img/flags/FLAG_EU.webp" title="Europe" style="width: 30px; border: 1px solid;">
+  </td>
+  <td>
+   • 180G 12" LP <br>
+   • RI PRESS <br>
+   • "BACK TO BLACK" SERIES
+  </td>
+  <td>
+   EU 180G 12" LP remaster pressed by Record Industry as part of the "Back to Black" series. Issued by MFSL in a gatefold record sleeve. Numbered [#012576].
+  </td>
+  <td>
+   <img src="https://i.discogs.com/znDLghMSYqzKjbC-sitQJbO3pwxMeoa7v6yHu31EPhQ/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTk2ODAy/NDAtMTQ4NDY1Nzcx/OS03ODcyLnBuZw.jpeg" style="width: 100%; display: block;">
+  </td>
+  <td>
+   <a href=https://www.discogs.com/release/9680240-Weezer-Pinkerton>Discogs</a>
+   <s>Catalog</s>
+  </td>
+
+ </tr>
+ <tr>
+
+   <td style="background-color: #FFDAB9" />
+  <td>
+   1996
+  </td>
+  <td>
+   "El Scorcho"
+  </td>
+  <td style="text-align:center;">
+   <img src="../img/flags/FLAG_UK.webp" title="United Kingdom" style="width: 30px; border: 1px solid;">
+  </td>
+  <td>
+   • 7" 45 RPM SINGLE
+  </td>
+  <td>
+   UK 7" 45 RPM single b/w "You Gave Your Love to Me Softly". Issued in a sleeve with artwork.
+  </td>
+  <td>
+   <img src="https://i.discogs.com/JDiwnvfCExsSyiUxvL-q_VkkJozhRDXhdjcrHMehdko/rs:fit/g:sm/q:90/h:600/w:597/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIzNjE1/MzgtMTY2MTU5Mjg4/Mi0xNDI3LmpwZWc.jpeg" style="width: 100%; display: block;">
+  </td>
+  <td>
+   <a href=https://www.discogs.com/release/2361538-Weezer-El-Scorcho>Discogs</a>
+   <a href=https://www.weezerpedia.com/w/index.php?title=Catalog:El_Scorcho#United_Kingdom,_GFS_22167,_1996,_Vinyl_(7%22)>Catalog</a>
+  </td>
+
+ </tr>
+ <tr>
+
+   <td style="background-color: #B0C4DE" />
+  <td>
+   2013
+  </td>
+  <td>
+   <i>Weezer (The Green Album)</i>
+  </td>
+  <td style="text-align:center;">
+   <img src="../img/flags/FLAG_US.webp" title="United States" style="width: 30px; border: 1px solid;">
+  </td>
+  <td>
+   • 180G 12" LP <br>
+   • RTI PRESS <br>
+   • MFSL MASTER <br>
+   • NUMBERED
+  </td>
+  <td>
+   180G 12" LP remaster pressed by Record Technology Incorporated. Issued by MFSL in a gatefold record sleeve. This version has the "correct" Weezer font on the front artwork, unlike most versions of this album. Numbered [#003997].
+  </td>
+  <td>
+   <img src="https://i.discogs.com/WPeiPz5q565BqJ1bYk3MBmFthGpG6u3v0bkmSN3efUk/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ3NjAz/NTQtMTY1MjU1MTcx/MC0zNzU4LmpwZWc.jpeg" style="width: 100%; display: block;">
+  </td>
+  <td>
+   <a href=https://www.discogs.com/release/4760354-Weezer-Weezer>Discogs</a>
+   <s>Catalog</s>
+  </td>
+
+ </tr>
+ <tr>
+
+   <td style="background-color: #B0C4DE" />
+  <td>
+   2016
+  </td>
+  <td>
+   <i>Weezer (The Green Album)</i>
+  </td>
+  <td style="text-align:center;">
+   <img src="../img/flags/FLAG_US.webp" title="United States" style="width: 30px; border: 1px solid;">
+  </td>
+  <td>
+   • 12" LP <br>
+   • RTI PRESS
+  </td>
+  <td>
+   12" LP remaster pressed by Record Technology Incorporated.
+  </td>
+  <td>
+   <img src="https://i.discogs.com/l7-MDxFSPLdEDEbjJ64CpvtVUT4iT-H7jMiM_ERbQBU/rs:fit/g:sm/q:90/h:593/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTkyNTg0/MTUtMTQ5MDk2Mzk4/NC05ODUwLmpwZWc.jpeg" style="width: 100%; display: block;">
+  </td>
+  <td>
+   <a href=https://www.discogs.com/release/9258415-Weezer-Weezer>Discogs</a>
+   <a href=https://www.weezerpedia.com/w/index.php?title=Catalog:Weezer_(The_Green_Album)#United_States,_B0025154-01,_2016,_Vinyl,_Reissue,_Remastered>Catalog</a>
+  </td>
+
+ </tr>
+ <tr>
+
+   <td style="background-color: #FFDAB9" />
+  <td>
+   2001
+  </td>
+  <td>
+   "Hash Pipe"
+  </td>
+  <td style="text-align:center;">
+   <img src="../img/flags/FLAG_US.webp" title="United States" style="width: 30px; border: 1px solid;">
+  </td>
+  <td>
+   • 7" 45 RPM SINGLE
+  </td>
+  <td>
+   7" 45 RPM single b/w "I Do". Issued in a sleeve with artwork.
+  </td>
+  <td>
+   <img src="https://i.discogs.com/Lsplquf3Te-7DYPn6jgtXcE-7gvl2VqcOlY5_O_35Is/rs:fit/g:sm/q:90/h:600/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY4ODIz/MC0xMzg0OTczMDQw/LTIzMjEuanBlZw.jpeg" style="width: 100%; display: block;">
+  </td>
+  <td>
+   <a href=https://www.discogs.com/release/688230-Weezer-Hash-Pipe>Discogs</a>
+   <a href=https://www.weezerpedia.com/w/index.php?title=Catalog:Hash_Pipe#United_States,_0694975597,_2001,_Vinyl_(7%22)>Catalog</a>
+  </td>
+
+ </tr>
+ <tr>
+
+   <td style="background-color: #FFDAB9" />
+  <td>
+   2001
+  </td>
+  <td>
+   "Hash Pipe"
+  </td>
+  <td style="text-align:center;">
+   <img src="../img/flags/FLAG_US.webp" title="United States" style="width: 30px; border: 1px solid;">
+  </td>
+  <td>
+   • 12" 33⅓ RPM 3-TRACK SINGLE <br>
+   • REMIXES
+  </td>
+  <td>
+   12" 33⅓ RPM 3-track single. Includes the "Jimmy Pop" remix on the A-side and the Chris Vrenna's "Kick Me" and "Under Glass" remixes on the B-side. Also titled <i>Hash Pipe. The Remixes.</i> Issued in a generic black sleeve with a sticker on the front.
+  </td>
+  <td>
+   <img src="https://i.discogs.com/qEtVjETVtNEdIeYX1WliCw1waEjvuNXyEaRewniIfnk/rs:fit/g:sm/q:90/h:600/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMwODY5/My0xNDYzNTYxMTk3/LTQyNDkuanBlZw.jpeg" style="width: 100%; display: block;">
+  </td>
+  <td>
+   <a href=https://www.discogs.com/release/308693-Weezer-Hash-Pipe-The-Remixes>Discogs</a>
+   <a href=https://www.weezerpedia.com/w/index.php?title=Catalog:Hash_Pipe#United_States,_INTR-10456-1,_2001,_Vinyl,_Promo_(%22The_Remixes%22)>Catalog</a>
+  </td>
+
+ </tr>
+ <tr>
+
+   <td style="background-color: #FFDAB9" />
+  <td>
+   2002
+  </td>
+  <td>
+   "Keep Fishin'"
+  </td>
+  <td style="text-align:center;">
+   <img src="../img/flags/FLAG_UK.webp" title="United Kingdom" style="width: 30px; border: 1px solid;">
+  </td>
+  <td>
+   • 7" 45 RPM SINGLE <br>
+   • "GREEN" COLOR
+  </td>
+  <td>
+   UK 7" 45 RPM (radio version) single b/w "Photograph" (live version). This release is a green colored vinyl. Issued in a sleeve with artwork.
+  </td>
+  <td>
+   <img src="https://i.discogs.com/DA-4BuRUcGVDIwlD8R4Qzf-16B-BnS6fC-gyVX-FJ60/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5MDA4/NTUtMTM4NDk3Mjk4/NS04Njg4LmpwZWc.jpeg" style="width: 100%; display: block;">
+  </td>
+  <td>
+   <a href=https://www.discogs.com/release/1900855-Weezer-Keep-Fishin>Discogs</a>
+   <s>Catalog</s>
+  </td>
+
+ </tr>
+ <tr>
+
+   <td style="background-color: #F4BF92" />
+  <td>
+   2008
+  </td>
+  <td>
+   "Troublemaker"
+  </td>
+  <td style="text-align:center;">
+   <img src="../img/flags/FLAG_EU.webp" title="Europe" style="width: 30px; border: 1px solid;">
+  </td>
+  <td>
+   • 12" 33⅓ RPM 7-TRACK SINGLE <br>
+   • REMIXES EP <br>
+   • "TRANSLUCENT RED" COLOR
+  </td>
+  <td>
+   European 12" 33⅓ RPM 7-track single. Also titled <i>Troublemaker Remixes</i>. All seven tracks are remixes of the song by various artists. This release is a translucent red colored vinyl. Issued in a generic black sleeve with a sticker on the front.
+  </td>
+  <td>
+   <img src="https://i.discogs.com/IGhOwKoAL3qqlhGaKGzNwcCaK5mBzHrycpQgw4ErJ9E/rs:fit/g:sm/q:90/h:499/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ5NzI5/MDktMTM4MTAxNTMz/MC0yMTE1LmpwZWc.jpeg" style="width: 100%; display: block;">
+  </td>
+  <td>
+   <a href=https://www.discogs.com/release/4972909-Weezer-Troublemaker-Remixes>Discogs</a>
+   <a href=https://www.weezerpedia.com/w/index.php?title=Catalog:Troublemaker_Remixes#Europe,_WEEZTMVP1,_2008,_Vinyl_(12%22),_Promo,_Colored_Vinyl_(Red)>Catalog</a>
+  </td>
+
+ </tr>
+ <tr>
+
+   <td style="background-color: #B0C4DE" />
+  <td>
+   2009
+  </td>
+  <td>
+   <i>Raditude</i>
+  </td>
+  <td style="text-align:center;">
+   <img src="../img/flags/FLAG_US.webp" title="United States" style="width: 30px; border: 1px solid;">
+  </td>
+  <td>
+   • 180G 12" LP <br>
+   • UNITED RECORD PRESS
+  </td>
+  <td>
+   180 gram 12" LP pressing by United Record Pressing.
+  </td>
+  <td>
+   <img src="https://i.discogs.com/0mLNrDuJyJ0Tco-9ugwCxomxgv86gdK_JZ7rRWb-6io/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIwMDQ1/MzEtMTI1ODAwMTQ5/My5qcGVn.jpeg" style="width: 100%; display: block;">
+  </td>
+  <td>
+   <a href=https://www.discogs.com/release/2004531-Weezer-Raditude>Discogs</a>
+   <s>Catalog/s>
   </td>
 
  </tr>
@@ -5056,8 +5822,8 @@
  </tr>
 </table>
 
- <h2 id="DVDs">
-   DVDs
+ <h2 id="Video">
+   Video
  </div></h2>
 
 <table>
@@ -5124,8 +5890,41 @@
  <hr>
 
  <p class="center">
-  Last updated: August 1, 2025 • Burnst Jamp (keatingconner@gmail.com)
+  Last updated: April 13, 2026 • Burnst Jamp (keatingconner@gmail.com)
  </p>
+
+ 
+<script> // FROM https://generatepress.com/forums/topic/make-element-appear-after-scroll/
+// debounce scroll eventListener
+function debounceX(func, wait = 2, immediate = true) {
+  let timeout;
+  return function() {
+    let context = this, args = arguments;
+    let later = function() {
+      timeout = null;
+      if (!immediate) func.apply(context, args);
+    };
+    let callNow = immediate && !timeout;
+    clearTimeout(timeout);
+    timeout = setTimeout(later, wait);
+    if (callNow) func.apply(context, args);
+  };
+};
+// check position 
+function checkScrollPosition() {
+  let windowY = window.scrollY;
+  let targetY = 350; // target scroll position
+  if (windowY < targetY) {
+    watchedEL.classList.remove('is-visible');
+  } else {
+    watchedEL.classList.add('is-visible');
+  }
+  scrollPos = windowY;
+}
+//  add listener
+const watchedEL = document.querySelector('#top-jump');
+window.addEventListener('scroll', debounceX(checkScrollPosition));
+</script> 
 
  </body>
 </html>
